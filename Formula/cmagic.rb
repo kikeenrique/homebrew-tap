@@ -1,7 +1,7 @@
 class Cmagic < Formula
   desc "Inspect Codemagic builds and pull their artefacts from the terminal"
   homepage "https://github.com/kikeenrique/cmagic"
-  version "0.1.0"
+  version "0.2.0"
 
   # cmagic's release ships one universal (arm64+x86_64) binary, published as two
   # byte-identical triple-named tarballs so arch-based downloaders resolve on
@@ -9,12 +9,12 @@ class Cmagic < Formula
   # build or bottle here — we install the released binary directly.
   on_macos do
     on_arm do
-      url "https://github.com/kikeenrique/cmagic/releases/download/v0.1.0/cmagic-aarch64-apple-darwin.tar.gz"
-      sha256 "ee7ddf4af723587bc35a8fb357af103cfbe46c0218d4b497bb10a71206999a14"
+      url "https://github.com/kikeenrique/cmagic/releases/download/v0.2.0/cmagic-aarch64-apple-darwin.tar.gz"
+      sha256 "cc07bfa1c4d1f6f7f6ed91d15da941e155142af10c94aacbce35304c14536030"
     end
     on_intel do
-      url "https://github.com/kikeenrique/cmagic/releases/download/v0.1.0/cmagic-x86_64-apple-darwin.tar.gz"
-      sha256 "ee7ddf4af723587bc35a8fb357af103cfbe46c0218d4b497bb10a71206999a14"
+      url "https://github.com/kikeenrique/cmagic/releases/download/v0.2.0/cmagic-x86_64-apple-darwin.tar.gz"
+      sha256 "cc07bfa1c4d1f6f7f6ed91d15da941e155142af10c94aacbce35304c14536030"
     end
   end
 
