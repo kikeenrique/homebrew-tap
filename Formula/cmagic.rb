@@ -8,12 +8,12 @@ class Cmagic < Formula
   # build or bottle here — we install the released binary directly.
   on_macos do
     on_arm do
-      url "https://github.com/kikeenrique/cmagic/releases/download/v0.4.1/cmagic-aarch64-apple-darwin.tar.gz"
-      sha256 "4c6ac51f3397561f330e0b6cbd64c67e9234d819cc08eba732908d92d87c6d37"
+      url "https://github.com/kikeenrique/cmagic/releases/download/v0.4.2/cmagic-aarch64-apple-darwin.tar.gz"
+      sha256 "75ac85449686b907ba6c41109b36a58d58514bc92ade5b5b59d4ec872204579f"
     end
     on_intel do
-      url "https://github.com/kikeenrique/cmagic/releases/download/v0.4.1/cmagic-x86_64-apple-darwin.tar.gz"
-      sha256 "4c6ac51f3397561f330e0b6cbd64c67e9234d819cc08eba732908d92d87c6d37"
+      url "https://github.com/kikeenrique/cmagic/releases/download/v0.4.2/cmagic-x86_64-apple-darwin.tar.gz"
+      sha256 "75ac85449686b907ba6c41109b36a58d58514bc92ade5b5b59d4ec872204579f"
     end
   end
 
@@ -24,12 +24,12 @@ class Cmagic < Formula
   # two are within ~2 MB of each other since v0.4.1, so that robustness is free.
   on_linux do
     on_arm do
-      url "https://github.com/kikeenrique/cmagic/releases/download/v0.4.1/cmagic-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "84c8459ca679269edcf057e6b55bb98f329000e783107c437fe4a7bff2e1775c"
+      url "https://github.com/kikeenrique/cmagic/releases/download/v0.4.2/cmagic-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "f4d8951df8225790b4fdc82cdfaf09bcd5136c64f562a5865e352bdff9525eb4"
     end
     on_intel do
-      url "https://github.com/kikeenrique/cmagic/releases/download/v0.4.1/cmagic-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "16064b8d7376b63e55dc9ea55d8ae3a18908619908a94f845051eaba06220885"
+      url "https://github.com/kikeenrique/cmagic/releases/download/v0.4.2/cmagic-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "922b921b576334d8f0d012ee57cb20ae0c7f64f5c34ad4a2ae00775182a1560e"
     end
   end
 
