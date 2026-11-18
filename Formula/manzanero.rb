@@ -1,22 +1,14 @@
 class Manzanero < Formula
   desc "Control and inspect Apple devices from terminals and agents"
   homepage "https://github.com/kikeenrique/manzanero"
+  url "https://github.com/kikeenrique/manzanero/releases/download/v0.1.0-beta.1/manzanero-aarch64-apple-darwin.tar.gz"
   version "0.1.0-beta.1"
+  sha256 "480dcb4acbf32391ec48c3d5453b0c4617526fbd5af54490bfd9384be4f00b8f"
   license "MIT"
 
-  depends_on macos: :sequoia
-  depends_on xcode: :run
-
-  on_macos do
-    on_arm do
-      url "https://github.com/kikeenrique/manzanero/releases/download/v0.1.0-beta.1/manzanero-aarch64-apple-darwin.tar.gz"
-      sha256 "480dcb4acbf32391ec48c3d5453b0c4617526fbd5af54490bfd9384be4f00b8f"
-    end
-    on_intel do
-      url "https://github.com/kikeenrique/manzanero/releases/download/v0.1.0-beta.1/manzanero-x86_64-apple-darwin.tar.gz"
-      sha256 "480dcb4acbf32391ec48c3d5453b0c4617526fbd5af54490bfd9384be4f00b8f"
-    end
-  end
+  depends_on arch: :arm64
+  depends_on macos: :tahoe
+  depends_on xcode: ["27.0", :run]
 
   def install
     libexec.install "manzanero", "lib"
@@ -27,9 +19,9 @@ class Manzanero < Formula
   def caveats
     <<~EOS
       Beta: device controls use installed Apple developer frameworks.
-      Select a full Xcode installation and run manzanero doctor.
+      Select Xcode 27 or later (macOS 26.6 or later) and run manzanero doctor.
       Physical UI testing needs pairing, Developer Mode and Enable UI Automation.
-      Native video requires macOS 26 or later. See the installed beta-testing.md.
+      See the installed beta-testing.md.
     EOS
   end
 
