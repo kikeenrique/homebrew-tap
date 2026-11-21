@@ -1,9 +1,9 @@
 class Manzanero < Formula
   desc "Control and inspect Apple devices from terminals and agents"
   homepage "https://github.com/kikeenrique/manzanero"
-  url "https://github.com/kikeenrique/manzanero/releases/download/v0.1.0-beta.1/manzanero-aarch64-apple-darwin.tar.gz"
-  version "0.1.0-beta.1"
-  sha256 "480dcb4acbf32391ec48c3d5453b0c4617526fbd5af54490bfd9384be4f00b8f"
+  url "https://github.com/kikeenrique/manzanero/releases/download/v0.1.0-beta.2/manzanero-aarch64-apple-darwin.tar.gz"
+  version "0.1.0-beta.2"
+  sha256 "33ef92a17d0e84619b6fc42cc9f0deea75a0fca7617f55a21e1a7730e25e3e34"
   license "MIT"
 
   depends_on arch: :arm64
@@ -26,7 +26,7 @@ class Manzanero < Formula
   end
 
   test do
-    assert_match "0.1.0-beta.1", shell_output("#{bin}/manzanero --version")
+    assert_match "0.1.0-beta.2", shell_output("#{bin}/manzanero --version")
     assert_match "Apple device tools", shell_output("#{bin}/manzanero --help")
   end
 end
