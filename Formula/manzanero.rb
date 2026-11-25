@@ -1,9 +1,9 @@
 class Manzanero < Formula
   desc "Control and inspect Apple devices from terminals and agents"
   homepage "https://github.com/kikeenrique/manzanero"
-  url "https://github.com/kikeenrique/manzanero/releases/download/v0.1.0-beta.3/manzanero-aarch64-apple-darwin.tar.gz"
-  version "0.1.0-beta.3"
-  sha256 "5dab0c1d9d5f9ad6d7a385f6512975be9dc62c65b1d7b4a7986c361c4daf4e7a"
+  url "https://github.com/kikeenrique/manzanero/releases/download/v0.1.0-beta.4/manzanero-aarch64-apple-darwin.tar.gz"
+  version "0.1.0-beta.4"
+  sha256 "8704bc6ba3f29d7a422d9f7503e2865923789cda9393bb1028b220719457e2ec"
   license "MIT"
 
   # Releases are GitHub prereleases, which the default strategy skips.
